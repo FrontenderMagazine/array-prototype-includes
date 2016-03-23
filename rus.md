@@ -16,6 +16,7 @@
 
     > ['a', 'b', 'c'].includes('a')
     true
+    
     > ['a', 'b', 'c'].includes('d')
     false
     
@@ -30,6 +31,7 @@
 
     > [NaN].includes(NaN)
     true
+    
     > [NaN].indexOf(NaN)
     -1
 
