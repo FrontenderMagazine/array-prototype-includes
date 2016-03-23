@@ -8,7 +8,7 @@
 
 ## includes — новый метод Array
  
-`includes` — новый метод `Array`. Он обладает следующей сигнатурой:
+`includes` — новый метод `Array`. Его сигнатура:
 
     Array.prototype.includes(value : any) : boolean
 
