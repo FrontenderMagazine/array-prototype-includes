@@ -1,25 +1,25 @@
 # Новая возможность языка в ES2016: Array.prototype.includes
 
-`Array.prototype.includes` это новая возможность ECMAScript предложенная 
+`Array.prototype.includes` — это новая возможность ECMAScript, предложенная 
 Домиником Дениколой (Domenic Denicola) и Риком Валдроном (Rick Waldron). 
-Она находится на четвертой стадии (готова) и является частью 
+Она находится на четвертой стадии [процесса формирования релизов][6], то есть готова и является частью 
 стандарта [ECMAScript 2016][1].
 
 
 ## includes — новый метод Array
  
-`includes` — новый метод `Array` обладает следующей сигнатурой:
+`includes` — новый метод `Array`. Он обладает следующей сигнатурой:
 
     Array.prototype.includes(value : any) : boolean
 
-Он возвращает `true` если массив содержит `value` и `false` в противном случае:
+Метод возвращает `true`, если массив содержит `value`, в противном случае —  `false`:
 
     > ['a', 'b', 'c'].includes('a')
     true
     > ['a', 'b', 'c'].includes('d')
     false
     
-`includes` подобна `indexOf` – следующие два выражения практически 
+`includes` подобна `indexOf`, следующие два выражения практически 
 эквивалентны друг другу:
 
     arr.includes(x)
@@ -47,7 +47,7 @@
 ## Часто задаваемые вопросы
 
 * **Почему метод называется `includes` а не `contains`?**
-  Изначально так и планировалось, но обнаружили, что в результате ломается код
+  Изначально так и планировалось, но обнаружили, что в результате ломается код,
   который уже есть в сети ([MooTools добавляет метод `contains` в `Array.prototype`][3]).
 
 * **Почему метод называется `includes` а не `has`?**
@@ -59,7 +59,7 @@
    Разве это не непоследовательно по отношению к `Array.prototype.includes`?**
    Если бы `includes` массивов и строк работал одинаково, он бы принимал массивы, 
    а не отдельные элементы. Но `includes` создан по подобию `indexOf`; символы
-   рассматриваются как особый случай, а строки произвольной длинны как общий.
+   рассматриваются как особый случай, а строки произвольной длины — как общий.
 
 
 ## Материалы для дальнейшего изучения
@@ -72,3 +72,4 @@
 [3]: https://esdiscuss.org/topic/having-a-non-enumerable-array-prototype-contains-may-not-be-web-compatible
 [4]: http://exploringjs.com/es6/ch_strings.html#_checking-for-containment-and-repeating-strings
 [5]: https://github.com/tc39/Array.prototype.includes/
+[6]: http://www.2ality.com/2015/11/tc39-process.html
